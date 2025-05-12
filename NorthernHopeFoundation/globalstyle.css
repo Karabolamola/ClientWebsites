@@ -23,6 +23,21 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 header h1 {
