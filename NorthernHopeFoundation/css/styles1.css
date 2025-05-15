@@ -49,8 +49,12 @@ p {
     margin: auto;
 }
 
+.fullContainer .container p {
+    margin-bottom: 20px;
+}
+
 .sectionTitle {
-    width: 300px;
+    width: 800px;
     border-bottom: 3px solid var(--themeRed);
     text-align: center;
     font-size: 2rem;
@@ -268,6 +272,6 @@ header nav ul li a:hover {
 }
 
 .programs .boxContainer .box:nth-child(1) .cardImage, .programs .boxContainer .box:nth-child(1) .cardImage::after {
-    background-image: url('./images/programs1.jpg');
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alamy.com%2Fstock-photo%2Faids.html%3Fblackwhite%3D1&psig=AOvVaw2OBcYUiQ0P71VzV1-WNm1Z&ust=1747421066804000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiq2oCRpo0DFQAAAAAdAAAAABAE');
 }
 /* Programs Section End */
