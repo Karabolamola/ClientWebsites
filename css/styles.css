@@ -43,7 +43,6 @@ p {
 .fullContainer {
     width: 100%;
 }
-
 .container {
     width: 1140px;
     margin: auto;
@@ -420,6 +419,11 @@ header nav ul li a:hover {
     .sectionTitle {
         width: 100%;
         font-size: 1.5rem;
+    }
+    
+    .banner {
+        width: 100%;
+        min-height: 40vh;
     }
 
     .banner h1 {
