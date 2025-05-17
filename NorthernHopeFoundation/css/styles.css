@@ -196,7 +196,7 @@ header nav ul li a:hover {
     text-align: center;
     border-radius: 50%;
     height: 250px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     transition: 0.4s;
     margin: 0 30px;
 }
@@ -204,7 +204,7 @@ header nav ul li a:hover {
 #aboutSection .cards > div:hover {
     width: 300px;
     margin-top: -20px;
-    border-color: var(--themeRed);
+    /* border-color: var(--themeRed); */
     padding: 55px;
     height: 300px;
 }
@@ -216,17 +216,29 @@ header nav ul li a:hover {
 
 #aboutSection .cards .donationBox {
     background-color: var(--themeBlue);
+    border: 2px solid var(--themeRed);
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #aboutSection .cards .volunteerBox {
     background-color: var(--themeRed);
+    border: 2px solid var(--themeYellow);
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #aboutSection .cards .scholarshipBox {
     background-color: var(--themeYellow);
+    border: 2px solid var(--themeBlue);
     color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #aboutSection .cards > div:hover button {
