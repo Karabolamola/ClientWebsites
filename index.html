@@ -17,7 +17,13 @@
                 <div class="logo">
                     <img src="./images/NH_Foundation_logo_transparent.png" alt="NH Foundation logo">
                 </div>
-                <nav class="navbar">
+                <!-- Hamburger Icon -->
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="navbar" id="navMenu">
                     <ul>
                         <li><a href="#homeSection">Home</a></li>
                         <li><a href="#aboutSection">About Us</a></li>
@@ -25,6 +31,7 @@
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="#contactSection">Contact Us</a></li>
                     </ul>
+                </nav>
             </div>
         </header>
 
@@ -145,4 +152,12 @@
     <!-- Footer Section End -->
 </body>
 
+<script>
+    const burger = document.getElementById('burger');
+    const navMenu = document.getElementById('navMenu');
+
+    burger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
 </html>
