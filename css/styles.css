@@ -489,6 +489,11 @@ header nav ul li a:hover {
         display: block;
     }
 
+    .banner {
+        width: 100%;
+        min-height: 40vh;
+    }
+
     .banner h1 {
         font-size: 2rem;
         margin-top: 120px;
