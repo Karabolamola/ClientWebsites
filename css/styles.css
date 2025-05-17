@@ -386,3 +386,20 @@ header nav ul li a:hover {
     background-color: #e2e2e2;
 } */
 /* Gallery Section End */
+
+/* Mobile Friendly UI Start */
+/* @media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+} */
+  /* Mobile Friendly UI End */
