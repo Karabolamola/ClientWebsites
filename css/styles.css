@@ -485,10 +485,6 @@ header nav ul li a:hover {
         display: block;
     }
 
-    .banner {
-        min-height: 50vh;
-    }
-
     .banner h1 {
         font-size: 2rem;
         margin-top: 120px;
@@ -584,10 +580,6 @@ header nav ul li a:hover {
 
     .carousel-images {
         grid-template-columns: 1fr;
-    }
-
-    .banner {
-        min-height: 50vh;
     }
 
     .banner h1 {
