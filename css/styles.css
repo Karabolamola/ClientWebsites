@@ -77,6 +77,11 @@ p {
     border: 3px solid #fff;
 }
 
+.title, .subtitle {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 section {
     padding: 100px 0;
     position: relative;
@@ -180,7 +185,7 @@ header nav ul li a:hover {
     flex-direction: column;
 }
 
-#aboutSection .cards {
+#aboutSection .cards-old {
     display: flex;
     justify-content: space-between;
     margin: 50px 370px 0 370px;
@@ -188,7 +193,7 @@ header nav ul li a:hover {
     height: 245px;
 }
 
-#aboutSection .cards > div {
+#aboutSection .cards-old > div {
     width: 250px;
     background-color: var(--gray);
     padding: 30px;
@@ -201,7 +206,7 @@ header nav ul li a:hover {
     margin: 0 30px;
 }
 
-#aboutSection .cards > div:hover {
+#aboutSection .cards-old > div:hover {
     width: 300px;
     margin-top: -20px;
     /* border-color: var(--themeRed); */
@@ -209,12 +214,12 @@ header nav ul li a:hover {
     height: 300px;
 }
 
-#aboutSection .cards > div p {
+#aboutSection .cards-old > div p {
     font-size: 14px;
     margin-top: 15px;
 }
 
-#aboutSection .cards .donationBox {
+#aboutSection .cards-old .donationBox {
     background-color: var(--themeBlue);
     border: 2px solid var(--themeRed);
     color: #fff;
@@ -223,7 +228,7 @@ header nav ul li a:hover {
     justify-content: center;
 }
 
-#aboutSection .cards .volunteerBox {
+#aboutSection .cards-old .volunteerBox {
     background-color: var(--themeRed);
     border: 2px solid var(--themeYellow);
     color: #fff;
@@ -232,7 +237,7 @@ header nav ul li a:hover {
     justify-content: center;
 }
 
-#aboutSection .cards .scholarshipBox {
+#aboutSection .cards-old .scholarshipBox {
     background-color: var(--themeYellow);
     border: 2px solid var(--themeBlue);
     color: #000;
@@ -241,10 +246,32 @@ header nav ul li a:hover {
     justify-content: center;
 }
 
-#aboutSection .cards > div:hover button {
+#aboutSection .cards-old > div:hover button {
     background-color: var(--themeRed);
     color: #fff;
     
+}
+
+#aboutSection .card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 0;
+    border: 2px solid #000;
+}
+
+#aboutSection .card-section .cards{
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+    margin: 0 20px;
+}
+
+#aboutSection .card-section .cards h3 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 /* About Section End */
 
