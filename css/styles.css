@@ -317,6 +317,10 @@ header nav ul li a:hover {
 .partners-logo-item-4 {
     margin-top: 80px;
 }
+
+.partners .bullet {
+    color: #000;
+}
 /* Partners and Sponsors Section End */
 
 /* Founders and Directors Section Start */
