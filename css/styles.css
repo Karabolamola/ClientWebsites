@@ -523,6 +523,66 @@ header nav ul li a:hover {
         width: 90%;
         font-size: 1rem;
     }
+
+    .venn-container {
+        height: 210px;
+    }
+
+    .circle {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+        color: black;
+        font-weight: 500;
+        font-size: 0.5rem;
+        mix-blend-mode: multiply;  /* Enables overlapping color blending */
+        opacity: 0.7; /* Adjusts transparency */
+    }
+
+    .circle span {
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .circle p {
+        font-size: 0.65rem;
+    }
+
+    .circle-a {
+        background-color: var(--themeRed); /* Red */
+        left: -46px;
+        top: 25px;
+    }
+    
+    .circle-b {
+        background-color: var(--themeYellow); /* Red */
+        left: 220px;
+        top: 25px;
+    }
+    
+    .circle-c {
+        background-color: var(--themeBlue); /* Red */
+        left: 485px;
+        top: 25px;
+    }
+    
+    .circle-d {
+        background-color: var(--themeBlue); /* Red */
+        left: 90px;
+        top: 0px;
+    }
+    
+    .circle-e {
+        background-color: var(--themeRed); /* Red */
+        left: 360px;
+        top: 0px;
+    }
 }
 
   /* Tablet and Below */
@@ -593,25 +653,29 @@ header nav ul li a:hover {
         width: 90%;
     }
 
-    #aboutSection .cards {
+    #aboutSection .card-section {
         flex-direction: column;
-        align-items: center;
-        margin: 0;
-        height: auto;
+        padding: 20px;
     }
 
-    #aboutSection .cards > div {
-        width: 80%;
-        height: auto;
+    #aboutSection .card-section .cards {
         margin: 20px 0;
-        border-radius: 20px;
+        width: 100%;
     }
 
-    #aboutSection .cards > div:hover {
-        width: 90%;
-        margin-top: 0;
-        padding: 30px;
-        height: auto;
+    #aboutSection .card-section .cards h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #aboutSection .card-section .cards p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .bullet-paragraph {
+        flex-direction: row; /* keep bullet left */
+        align-items: flex-start;
     }
 
     .programs .boxContainer {
@@ -621,6 +685,89 @@ header nav ul li a:hover {
 
     .cardImage {
         padding-top: 40px;
+    }
+
+    .partners-logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin: 0 auto;
+    }
+
+    .partners-logo-item-2, .partners-logo-item-3{
+        margin-top: 20px;
+    }
+    
+    .partners-logo-item-4 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .venn-container {
+        position: relative;
+        width: 400px;
+        height: 610px;
+        margin: 50px auto;
+    }
+    
+    .circle {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+        color: black;
+        font-weight: 500;
+        font-size: 0.5rem;
+        mix-blend-mode: multiply;  /* Enables overlapping color blending */
+        opacity: 0.7; /* Adjusts transparency */
+    }
+
+    .circle span {
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .circle p {
+        font-size: 0.65rem;
+    }
+
+    .circle-a {
+        background-color: var(--themeRed); /* Red */
+        left: 0.1rem;
+        top: 25px;
+    }
+    
+    .circle-b {
+        background-color: var(--themeYellow); /* Red */
+        left: 0.4rem;
+        top: 550px;
+    }
+    
+    .circle-c {
+        background-color: var(--themeBlue); /* Red */
+        left: 2.2rem;
+        top: 285px;
+    }
+    
+    .circle-d {
+        background-color: var(--themeBlue); /* Red */
+        left: 0.4rem;
+        top: 370px;
+    }
+    
+    .circle-e {
+        background-color: var(--themeRed); /* Red */
+        left: 2.2rem;
+        top: 110px;
     }
 
     .carousel-images {
