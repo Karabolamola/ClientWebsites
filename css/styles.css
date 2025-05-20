@@ -87,7 +87,7 @@ section {
     position: relative;
 }
 
-.programs, .introduction, .copyright {
+.programs, .introduction, .copyright, .founders {
     background-color: #e2e2e2;
 }
 /* Common Styles End */
@@ -283,7 +283,40 @@ header nav ul li a:hover {
 /* Programs Section End */
 
 /* Partners and Sponsors Section Start */
+.partners-logo {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin: 0 auto;
+}
 
+.partners-logo img {
+    width: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px
+}
+
+.partners-logo p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.partners-logo span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.partners-logo-item-2, .partners-logo-item-3{
+    margin-top: 95px;
+}
+
+.partners-logo-item-4 {
+    margin-top: 80px;
+}
 /* Partners and Sponsors Section End */
 
 /* Founders and Directors Section Start */
