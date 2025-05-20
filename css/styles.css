@@ -86,6 +86,10 @@ section {
     padding: 100px 0;
     position: relative;
 }
+
+.programs, .introduction, .copyright {
+    background-color: #e2e2e2;
+}
 /* Common Styles End */
 
 /* Hone Section Start */
@@ -175,111 +179,52 @@ header nav ul li a:hover {
 /* Home Section End */
 
 /* About Section Start */
-#aboutSection .cardsSection {
-    background-color: #fff;
-    padding: 60px 0;
-    /* border: 3px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#aboutSection .cards-old {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 370px 0 370px;
-    position: relative;
-    height: 245px;
-}
-
-#aboutSection .cards-old > div {
-    width: 250px;
-    background-color: var(--gray);
-    padding: 30px;
-    color: #444;
-    text-align: center;
-    border-radius: 50%;
-    height: 250px;
-    /* border: 1px solid #ccc; */
-    transition: 0.4s;
-    margin: 0 30px;
-}
-
-#aboutSection .cards-old > div:hover {
-    width: 300px;
-    margin-top: -20px;
-    /* border-color: var(--themeRed); */
-    padding: 55px;
-    height: 300px;
-}
-
-#aboutSection .cards-old > div p {
-    font-size: 14px;
-    margin-top: 15px;
-}
-
-#aboutSection .cards-old .donationBox {
-    background-color: var(--themeBlue);
-    border: 2px solid var(--themeRed);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#aboutSection .cards-old .volunteerBox {
-    background-color: var(--themeRed);
-    border: 2px solid var(--themeYellow);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#aboutSection .cards-old .scholarshipBox {
-    background-color: var(--themeYellow);
-    border: 2px solid var(--themeBlue);
-    color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#aboutSection .cards-old > div:hover button {
-    background-color: var(--themeRed);
-    color: #fff;
-    
-}
-
 #aboutSection .card-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     padding: 20px 0;
-    border: 2px solid #000;
+    background: linear-gradient(to right, #004aad, #ffb400);
 }
 
 #aboutSection .card-section .cards{
-    border: 2px solid red;
     height: 100%;
     width: 100%;
     margin: 0 20px;
 }
 
 #aboutSection .card-section .cards h3 {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    color: var(--themeRed);
+    font-size: 2rem;
+}
+
+#aboutSection .card-section .cards p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 200
+}
+
+.bullet-paragraph {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.bullet {
+    line-height: 1.2;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    color: #fff;
+}
+
+.label span {
+    color: var(--themeRed);
+    font-weight: 600;
 }
 /* About Section End */
 
 /* Programs Section Start */
-.programs {
-    background-color: #e2e2e2;
-}
-
 .programs .boxContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -337,6 +282,71 @@ header nav ul li a:hover {
 }
 /* Programs Section End */
 
+/* Partners and Sponsors Section Start */
+
+/* Partners and Sponsors Section End */
+
+/* Founders and Directors Section Start */
+.venn-container {
+    position: relative;
+    width: 900px;
+    height: 350px;
+    margin: 50px auto;
+}
+
+.circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    mix-blend-mode: multiply;  /* Enables overlapping color blending */
+    opacity: 0.7; /* Adjusts transparency */
+}
+
+.circle span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.circle-a {
+    background-color: var(--themeRed); /* Red */
+    left: -130px;
+    top: 25px;
+}
+
+.circle-b {
+    background-color: var(--themeYellow); /* Red */
+    left: 250px;
+    top: 25px;
+}
+
+.circle-c {
+    background-color: var(--themeBlue); /* Red */
+    left: 630px;
+    top: 25px;
+}
+
+.circle-d {
+    background-color: var(--themeBlue); /* Red */
+    left: 60px;
+    top: -45px;
+}
+
+.circle-e {
+    background-color: var(--themeRed); /* Red */
+    left: 440px;
+    top: -45px;
+}
+/* Founders and Directors Section End */
+
 /* Footer Section Start */
 .footer {
     background: linear-gradient(to right, #004aad, #ffb400);
@@ -348,6 +358,11 @@ header nav ul li a:hover {
     margin-bottom: 2rem;
 }
 
+.footer .container .contact-items p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
 .footer .container .contact-items p, .footer .container .contact-items h2 {
     color: #fff;
 }
@@ -357,7 +372,7 @@ header nav ul li a:hover {
     flex-direction: column;
     gap: 1rem;
     max-width: 600px;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 2.5rem auto;
 }
 
 .contact-form input, .contact-form textarea {
@@ -381,6 +396,14 @@ header nav ul li a:hover {
 .footer .container p {
     color: #fff;
     margin-top: 1rem;
+}
+
+.copyright {
+    color: #000;;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: -40px;
+    padding: 1rem 0;
 }
 /* Footer Section End */
 
@@ -518,7 +541,7 @@ header nav ul li a:hover {
 
     .banner {
         width: 100%;
-        min-height: 40vh;
+        min-height: 50vh;
     }
 
     .banner h1 {
@@ -604,6 +627,11 @@ header nav ul li a:hover {
         line-height: normal;
         padding: 8px 10px;
         display: block;
+    }
+
+    .banner {
+        width: 100%;
+        min-height: 50vh;
     }
     
     .programs .boxContainer {
