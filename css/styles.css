@@ -77,9 +77,18 @@ p {
     border: 3px solid #fff;
 }
 
+.title, .subtitle {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 section {
     padding: 100px 0;
     position: relative;
+}
+
+.programs, .introduction, .copyright, .founders {
+    background-color: #e2e2e2;
 }
 /* Common Styles End */
 
@@ -170,89 +179,52 @@ header nav ul li a:hover {
 /* Home Section End */
 
 /* About Section Start */
-#aboutSection .cardsSection {
-    background-color: #fff;
-    padding: 60px 0;
-    /* border: 3px solid black; */
+#aboutSection .card-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 20px 0;
+    background: linear-gradient(to right, #004aad, #ffb400);
 }
 
-#aboutSection .cards {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 370px 0 370px;
-    position: relative;
-    height: 245px;
+#aboutSection .card-section .cards{
+    height: 100%;
+    width: 100%;
+    margin: 0 20px;
 }
 
-#aboutSection .cards > div {
-    width: 250px;
-    background-color: var(--gray);
-    padding: 30px;
-    color: #444;
-    text-align: center;
-    border-radius: 50%;
-    height: 250px;
-    /* border: 1px solid #ccc; */
-    transition: 0.4s;
-    margin: 0 30px;
+#aboutSection .card-section .cards h3 {
+    color: var(--themeRed);
+    font-size: 2rem;
 }
 
-#aboutSection .cards > div:hover {
-    width: 300px;
-    margin-top: -20px;
-    /* border-color: var(--themeRed); */
-    padding: 55px;
-    height: 300px;
-}
-
-#aboutSection .cards > div p {
-    font-size: 14px;
-    margin-top: 15px;
-}
-
-#aboutSection .cards .donationBox {
-    background-color: var(--themeBlue);
-    border: 2px solid var(--themeRed);
+#aboutSection .card-section .cards p {
     color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 200
 }
 
-#aboutSection .cards .volunteerBox {
-    background-color: var(--themeRed);
-    border: 2px solid var(--themeYellow);
+.bullet-paragraph {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.bullet {
+    line-height: 1.2;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
     color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-#aboutSection .cards .scholarshipBox {
-    background-color: var(--themeYellow);
-    border: 2px solid var(--themeBlue);
-    color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#aboutSection .cards > div:hover button {
-    background-color: var(--themeRed);
-    color: #fff;
-    
+.label span {
+    color: var(--themeRed);
+    font-weight: 600;
 }
 /* About Section End */
 
 /* Programs Section Start */
-.programs {
-    background-color: #e2e2e2;
-}
-
 .programs .boxContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -310,6 +282,108 @@ header nav ul li a:hover {
 }
 /* Programs Section End */
 
+/* Partners and Sponsors Section Start */
+.partners-logo {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.partners-logo img {
+    width: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px
+}
+
+.partners-logo p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.partners-logo span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.partners-logo-item-2, .partners-logo-item-3{
+    margin-top: 95px;
+}
+
+.partners-logo-item-4 {
+    margin-top: 80px;
+}
+
+.partners .bullet {
+    color: #000;
+}
+/* Partners and Sponsors Section End */
+
+/* Founders and Directors Section Start */
+.venn-container {
+    position: relative;
+    width: 900px;
+    height: 350px;
+    margin: 50px auto;
+}
+
+.circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    mix-blend-mode: multiply;  /* Enables overlapping color blending */
+    opacity: 0.7; /* Adjusts transparency */
+}
+
+.circle span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.circle-a {
+    background-color: var(--themeRed); /* Red */
+    left: -130px;
+    top: 25px;
+}
+
+.circle-b {
+    background-color: var(--themeYellow); /* Red */
+    left: 250px;
+    top: 25px;
+}
+
+.circle-c {
+    background-color: var(--themeBlue); /* Red */
+    left: 630px;
+    top: 25px;
+}
+
+.circle-d {
+    background-color: var(--themeBlue); /* Red */
+    left: 60px;
+    top: -45px;
+}
+
+.circle-e {
+    background-color: var(--themeRed); /* Red */
+    left: 440px;
+    top: -45px;
+}
+/* Founders and Directors Section End */
+
 /* Footer Section Start */
 .footer {
     background: linear-gradient(to right, #004aad, #ffb400);
@@ -321,6 +395,11 @@ header nav ul li a:hover {
     margin-bottom: 2rem;
 }
 
+.footer .container .contact-items p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
 .footer .container .contact-items p, .footer .container .contact-items h2 {
     color: #fff;
 }
@@ -330,7 +409,7 @@ header nav ul li a:hover {
     flex-direction: column;
     gap: 1rem;
     max-width: 600px;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 2.5rem auto;
 }
 
 .contact-form input, .contact-form textarea {
@@ -354,6 +433,14 @@ header nav ul li a:hover {
 .footer .container p {
     color: #fff;
     margin-top: 1rem;
+}
+
+.copyright {
+    color: #000;;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: -40px;
+    padding: 1rem 0;
 }
 /* Footer Section End */
 
@@ -436,6 +523,66 @@ header nav ul li a:hover {
         width: 90%;
         font-size: 1rem;
     }
+
+    .venn-container {
+        height: 210px;
+    }
+
+    .circle {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+        color: black;
+        font-weight: 500;
+        font-size: 0.5rem;
+        mix-blend-mode: multiply;  /* Enables overlapping color blending */
+        opacity: 0.7; /* Adjusts transparency */
+    }
+
+    .circle span {
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .circle p {
+        font-size: 0.65rem;
+    }
+
+    .circle-a {
+        background-color: var(--themeRed); /* Red */
+        left: -46px;
+        top: 25px;
+    }
+    
+    .circle-b {
+        background-color: var(--themeYellow); /* Red */
+        left: 220px;
+        top: 25px;
+    }
+    
+    .circle-c {
+        background-color: var(--themeBlue); /* Red */
+        left: 485px;
+        top: 25px;
+    }
+    
+    .circle-d {
+        background-color: var(--themeBlue); /* Red */
+        left: 90px;
+        top: 0px;
+    }
+    
+    .circle-e {
+        background-color: var(--themeRed); /* Red */
+        left: 360px;
+        top: 0px;
+    }
 }
 
   /* Tablet and Below */
@@ -491,7 +638,7 @@ header nav ul li a:hover {
 
     .banner {
         width: 100%;
-        min-height: 40vh;
+        min-height: 50vh;
     }
 
     .banner h1 {
@@ -506,25 +653,29 @@ header nav ul li a:hover {
         width: 90%;
     }
 
-    #aboutSection .cards {
+    #aboutSection .card-section {
         flex-direction: column;
-        align-items: center;
-        margin: 0;
-        height: auto;
+        padding: 20px;
     }
 
-    #aboutSection .cards > div {
-        width: 80%;
-        height: auto;
+    #aboutSection .card-section .cards {
         margin: 20px 0;
-        border-radius: 20px;
+        width: 100%;
     }
 
-    #aboutSection .cards > div:hover {
-        width: 90%;
-        margin-top: 0;
-        padding: 30px;
-        height: auto;
+    #aboutSection .card-section .cards h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #aboutSection .card-section .cards p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .bullet-paragraph {
+        flex-direction: row; /* keep bullet left */
+        align-items: flex-start;
     }
 
     .programs .boxContainer {
@@ -534,6 +685,89 @@ header nav ul li a:hover {
 
     .cardImage {
         padding-top: 40px;
+    }
+
+    .partners-logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin: 0 auto;
+    }
+
+    .partners-logo-item-2, .partners-logo-item-3{
+        margin-top: 20px;
+    }
+    
+    .partners-logo-item-4 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .venn-container {
+        position: relative;
+        width: 400px;
+        height: 610px;
+        margin: 50px auto;
+    }
+    
+    .circle {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+        color: black;
+        font-weight: 500;
+        font-size: 0.5rem;
+        mix-blend-mode: multiply;  /* Enables overlapping color blending */
+        opacity: 0.7; /* Adjusts transparency */
+    }
+
+    .circle span {
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .circle p {
+        font-size: 0.65rem;
+    }
+
+    .circle-a {
+        background-color: var(--themeRed); /* Red */
+        left: 0.1rem;
+        top: 25px;
+    }
+    
+    .circle-b {
+        background-color: var(--themeYellow); /* Red */
+        left: 0.4rem;
+        top: 550px;
+    }
+    
+    .circle-c {
+        background-color: var(--themeBlue); /* Red */
+        left: 2.2rem;
+        top: 285px;
+    }
+    
+    .circle-d {
+        background-color: var(--themeBlue); /* Red */
+        left: 0.4rem;
+        top: 370px;
+    }
+    
+    .circle-e {
+        background-color: var(--themeRed); /* Red */
+        left: 2.2rem;
+        top: 110px;
     }
 
     .carousel-images {
@@ -577,6 +811,11 @@ header nav ul li a:hover {
         line-height: normal;
         padding: 8px 10px;
         display: block;
+    }
+
+    .banner {
+        width: 100%;
+        min-height: 50vh;
     }
     
     .programs .boxContainer {
