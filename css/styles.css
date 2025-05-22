@@ -87,7 +87,12 @@ section {
     position: relative;
 }
 
-.programs, .introduction, .copyright, .founders {
+.container-background-1, .container-background-2, .container-background-3, .container-background-4, .container-background-5 {
+    padding: 20px 0;
+    width: 100%;
+}
+
+.programs, .introduction, .copyright, .founders, .container-background-2, .container-background-4 {
     background-color: #e2e2e2;
 }
 /* Common Styles End */
@@ -603,7 +608,7 @@ header nav ul li a:hover {
     
     nav ul {
         flex-direction: column;
-        padding: 1rem 0;
+        padding: 0.8rem 0;
     }
     
     nav ul li {
