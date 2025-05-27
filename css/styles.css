@@ -298,11 +298,17 @@ header nav ul li a:hover {
     margin: 0 auto;
 }
 
+.logo-image {
+    width: 5vw;
+    height: 150px;
+    align-items: center;
+    align-content: center;;
+}
+
 .partners-logo img {
     width: 150px;
     object-fit: cover;
     border-radius: 5px;
-    margin-bottom: 10px
 }
 
 .partners-logo p {
@@ -315,12 +321,11 @@ header nav ul li a:hover {
     font-weight: 500;
 }
 
-.partners-logo-item-2, .partners-logo-item-3{
-    margin-top: 95px;
-}
-
-.partners-logo-item-4 {
-    margin-top: 80px;
+.partners .bullet-paragraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .partners .bullet {
@@ -703,17 +708,23 @@ header nav ul li a:hover {
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap: 30px;
+        /* gap: 30px; */
         margin: 0 auto;
     }
 
-    .partners-logo-item-2, .partners-logo-item-3{
-        margin-top: 20px;
+    .partners-logo-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    
-    .partners-logo-item-4 {
-        margin-top: 20px;
-        margin-bottom: 20px;
+
+    .logo-image {
+        align-items: center;
+        align-content: center;
+        padding: 0 auto;
+        margin-right: 100px;
     }
 
     .venn-container {
