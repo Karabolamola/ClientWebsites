@@ -87,12 +87,12 @@ section {
     position: relative;
 }
 
-.container-background-1, .container-background-2, .container-background-3, .container-background-4, .container-background-5 {
+.gallery-container-styling {
     padding: 20px 0;
     width: 100%;
 }
 
-.programs, .introduction, .copyright, .founders, .container-background-2, .container-background-4 {
+.section-separator {
     background-color: #e2e2e2;
 }
 /* Common Styles End */
@@ -454,6 +454,10 @@ header nav ul li a:hover {
     text-align: center;
     margin: 20px 0;
     font-weight: 400;
+}
+
+.carousel {
+    padding-bottom: 0;
 }
 
 .carousel-images {

@@ -40,7 +40,7 @@
 
     <!-- Carousel Section Start -->
     <section class="carousel" id="carouselSection">
-        <div class="container container-background-1">
+        <div class="container gallery-container-styling">
             <h2 class="sectionTitle">Gallery</h2>
             <h1 class="description">Birthday celebration for two special kids at Lowe Primary School</h1>
             <div class="carousel-images space-after-images gallery-1">
@@ -56,7 +56,7 @@
             </div>
         </div>
 
-        <div class="container container-background-2">
+        <div class="container gallery-container-styling section-separator">
             <h1 class="description">Human Rights Day - Foundation reunion</h1>
             <div class="carousel-images space-after-images gallery-2">
                 <img src="images/human-rights-day/1.jpg" alt="Gallery Image 1">
@@ -85,7 +85,7 @@
             </div>
         </div>
 
-        <div class="container container-background-3">
+        <div class="container gallery-container-styling">
             <h1 class="description">Wits Founders visiting SA from Switzerland</h1>
             <div class="carousel-images space-after-images gallery-3">
                 <img src="images/wits-fundraising/1.jpg" alt="Gallery Image 1">
@@ -97,8 +97,8 @@
             </div>
         </div>
 
-        <div class="container container-background-4">
-            <h1 class="description">Pick up Point Supporting Clinic in Garankuwa (Phedisong 1, Phedisong 4, Garankuwa View and Maria Rantho Clinics)</h1>
+        <div class="container gallery-container-styling section-separator">
+            <h1 class="description">Pick up Point Supporting Clinic in Ga-Rankuwa (Phedisong 1, Phedisong 4, Ga-Rankuwa View and Maria Rantho Clinics)</h1>
             <div class="carousel-images space-after-images gallery-4">
                 <img src="images/pickpoint-clinics/6.jpg" alt="Gallery Image 6">
                 <img src="images/pickpoint-clinics/1.jpg" alt="Gallery Image 1">
@@ -109,8 +109,8 @@
             </div>
         </div>
 
-        <div class="container container-background-5">
-            <h1 class="description">Farming and Vegetable Drive</h1>
+        <div class="container gallery-container-styling">
+            <h1 class="description">Sakata Farming and Vegetable Drive</h1>
             <div class="carousel-images space-after-images gallery-5">
                 <img src="images/farming-and-vegetable-drive/1.jpg" alt="Gallery Image 1">
                 <img src="images/farming-and-vegetable-drive/2.jpg" alt="Gallery Image 2">
@@ -121,6 +121,17 @@
                 <img src="images/farming-and-vegetable-drive/7.jpg" alt="Gallery Image 7">
                 <img src="images/farming-and-vegetable-drive/8.jpg" alt="Gallery Image 8">
                 <img src="images/farming-and-vegetable-drive/9.jpg" alt="Gallery Image 9">
+            </div>
+        </div>
+
+        <div class="container gallery-container-styling section-separator">
+            <h1 class="description">Sanitary Pads Drive - Totlo Mpho Primary School</h1>
+            <div class="carousel-images space-after-images gallery-5">
+                <img src="images/sanitary-pads-drive-totlo-mpho-primary-school/1.jpg" alt="Gallery Image 1">
+                <img src="images/sanitary-pads-drive-totlo-mpho-primary-school/2.jpg" alt="Gallery Image 2">
+                <img src="images/sanitary-pads-drive-totlo-mpho-primary-school/3.jpg" alt="Gallery Image 3">
+                <img src="images/sanitary-pads-drive-totlo-mpho-primary-school/4.jpg" alt="Gallery Image 4">
+                <img src="images/sanitary-pads-drive-totlo-mpho-primary-school/5.jpg" alt="Gallery Image 5">
             </div>
         </div>
     </section>
@@ -142,26 +153,11 @@
                 <button type="submit">Send Message</button>
             </form>
         </div>
-        <p class="copyright">&copy; 2025 Northern Hope Foundation. All rights reserved.</p>
+        <p class="copyright section-separator">&copy; 2025 Northern Hope Foundation. All rights reserved.</p>
     </footer>
     <!-- Footer Section End -->
 </body>
 
-<script>
-    const burger = document.getElementById('burger');
-    const navMenu = document.getElementById('navMenu');
-
-    // Toggle menu on burger click
-    burger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-
-    // Close menu when a link is clicked
-    document.querySelectorAll('#navMenu a').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-        });
-    });
-</script>
-
+<!-- Scripts -->
+<script src="/js/burgerMenuScript.js"></script>
 </html>
