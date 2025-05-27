@@ -621,7 +621,7 @@ header nav ul li a:hover {
     
     nav ul li {
         display: block;
-        padding: 5px 0;
+        padding: 1px 0;
     }
     
     nav.active {
@@ -631,7 +631,7 @@ header nav ul li a:hover {
     nav ul li a {
         height: auto;
         line-height: normal;
-        padding: 8px 10px;
+        padding: 5px 10px;
         display: block;
     }
     
